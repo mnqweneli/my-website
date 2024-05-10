@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span> Mnqwe</span>neli</a>
+        <nav class="navbar">
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" /></svg></a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+            </ul>
+            <a href="#home" class="hideOnMobile">Home</a>
+            <a href="#about" class="hideOnMobile">About Me</a>
+
+        </nav>
+        <a href="#contact" class="contact">Contact Me</a>
+        <a href="#" class="menu-button" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" /></svg></a>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi</h3>
+            <h1>I'm <span>Mnqweneli<br />a Software Developer</span></h1>
+
+            <p>a passionate and innovative software developer with a keen eye for detail and a drive for excellence.</p>
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2" >Experience</button>
+
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class-="about-img">
+            <img src="user-1.jpg" alt="" />
+        </div>
+        <div class="about-content">
+            <h2 class="heading"> About<span>Me</span></h2>
+            <h3>Software<span>Developer</span></h3>
+            <p>
+                Driven by a curiosity for problem-solving, I thrive in dynamic environments where innovation and collaboration are at the forefront.
+                Throughout my career, I've had the opportunity to contribute to a variety of projects,
+                from building user-friendly web applications to optimizing backend systems for performance and scalability.
+            </p>
+            <a href="Mnqweneli Qabo's CV.pdf" download class="btn-2">Download CV</a>
+        </div>
+    </section>
+    <section class="contact-form" id="contact">
+        <h2 class="contact-me">Contact<span>Me</span></h2>
+
+        <form action="#" name="submit-to-google-sheet">
+            <div class="input-box">
+                <input type="text" name="Name" placeholder="Full Name" />
+                <input type="email" name="Email" placeholder="Email" />
+            </div>
+
+            <div class="input-box">
+                <input type="number" name="Number" placeholder="Phone number" />
+                <input type="text" name="Subject" placeholder="Subject" />
+            </div>
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1" />
+            <span id="msg"></span>
+        </form>
+
+    </section>
+    
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Service</a>
+            </li>
+            <li>
+                <a href="#">About Me</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright"> 2024 Mnqweneli | All Rights Reserved</p>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
